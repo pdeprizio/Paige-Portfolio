@@ -1,0 +1,14 @@
+.navbar {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.container-fluid {
+    background-color: rgb(91, 185, 252);
+    
+}
+
+.navbar-nav a {
+    color: brown;
+}
