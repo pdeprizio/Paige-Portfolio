@@ -1,14 +1,177 @@
+* {
+    font-family: 'Happy Monkey', cursive;
+}
+
 .navbar {
-  padding: 0;
+  padding:  10px;
   margin: 0;
   
 }
 
+.logo{
+    font-weight: 700;
+}
 .container-fluid {
-    background-color: rgb(91, 185, 252);
+    background-color: transparent;
+   
     
 }
 
 .navbar-nav a {
-    color: brown;
+    color: rgb(0, 0, 102);
+    font-weight: 400;
+    
+}
+
+.home {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5%;
+}
+
+.home img {
+    width: 300px; /* Adjust the width to your desired size */
+    height: auto; /* This maintains the aspect ratio */
+    max-width: 100%; /* Ensure it doesn't exceed its container's width */
+
+}
+
+.intro-words {
+    text-align: left;
+    color: white;
+  
+}
+ /*Button*/
+.custom-button {
+    /* Button width and height */
+    width: 200px;
+    height: 50px;
+    
+    /* Round edges (border-radius) */
+    border-radius: 25px;
+
+    /* Gradient background */
+    background: linear-gradient(90deg, #0088ff, #0055ff);
+
+    /* Text styling */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Text size */
+    text-align: center; /* Center text horizontally */
+    line-height: 50px; /* Vertically center text */
+    text-decoration: none; /* Remove underline if it's a link */
+
+    /* Other styles (optional) */
+    border: none; /* Remove border */
+    cursor: pointer; 
+}
+
+/* Media query for larger screens (e.g., desktop) */
+@media screen and (min-width: 768px) {
+    .home {
+        height: 80vh; /* Adjust the height as needed */
+    }
+}
+
+
+/*Contact*/
+
+.contact {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5%;
+   
+}
+
+.contact-intro {
+  color: white;
+  
+}
+
+
+/*Form*/
+
+.form{
+    height: 60vh;
+    background-color: #f1b8e5;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.formcontent{
+    padding: 24px;
+}
+
+.formcontent input,
+.formcontent textarea,
+.formcontent button {
+    margin: 4px 0;
+    padding: 8px;
+}
+
+/*Footer*/
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1654c7;
+    height: 40vh;
+    width: 100vw;
+    
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;  
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: rgb(0, 0, 0);
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom socials {
+   align-items: center; 
+    
 }

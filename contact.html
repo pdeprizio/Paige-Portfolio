@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Me</title>
+    <title>Paige DePrizio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f36a17dc2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"></script>
   </head>
   <body>
 
@@ -32,19 +34,61 @@
       </nav>
 
 
- <!--Home Section-->
+ <!--Contact Section-->
 
- <div class="home">
-    <div class="intro-words">
-  <h5>HELLO! I AM PAIGE DEPRIZIO</h5>
-  <h1>Building User Happiness through Creative Design.</h1>
-  <button class="custom-button" href="index.html">Contact Me</button>
+ <div class="contact">
+    <div class="contact-intro">
+  
+  <h1>Contact Me</h1>
+  
   </div>
-  <img src="images/selfie1.JPG">
+  <div>
 
 
+  </div>
  </div>
 
+ <!--Form-->
+
+ <div class="form">
+    <form method="POST">
+    <?php include 'sendmail.php'; ?>
+    <div class="formcontent" id="contact-form">
+    <input type="text" name="name" placeholder="Name" required/><br/>
+    <input type="email" name="email" placeholder="Email" required/><br/>
+    <input type="tel" name="phone" placeholder="Phone" required/><br/>
+    <textarea name="message" placeholder="Message" required></textarea><br/>
+    <div class="g-recaptcha" data-sitekey="6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"></div>
+    <button class="g-recaptcha"
+    data-sitekey="6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"
+    data-callback='onSubmit'
+    data-action='submit' type="submit">Submit</button>
+     </form>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
   <!--Footer-->
 
@@ -66,8 +110,6 @@
         <p>Copyright &copy;2023 Made with <i class="fa-solid fa-heart"></i> by paigedeprizio</p>
     </div>
 </footer>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
