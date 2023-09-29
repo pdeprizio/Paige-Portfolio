@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paige DePrizio</title>
+    <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0f36a17dc2.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"></script>
+    
   </head>
   <body>
 
  <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid text-center">
           <a class="navbar-brand logo" href="index.html">PAIGE DEPRIZIO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="projects.html">Projects</a>
               <a class="nav-link" href="contact.html">Contact Me</a>
               
             </div>
@@ -50,47 +50,13 @@
 
  <!--Form-->
 
- <div class="form">
-    <form method="POST">
-    <?php include 'sendmail.php'; ?>
-    <div class="formcontent" id="contact-form">
-    <input type="text" name="name" placeholder="Name" required/><br/>
-    <input type="email" name="email" placeholder="Email" required/><br/>
-    <input type="tel" name="phone" placeholder="Phone" required/><br/>
-    <textarea name="message" placeholder="Message" required></textarea><br/>
-    <div class="g-recaptcha" data-sitekey="6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"></div>
-    <button class="g-recaptcha"
-    data-sitekey="6LeOUxgoAAAAAJcJa6PexmKyVKekry56LTAWfJco"
-    data-callback='onSubmit'
-    data-action='submit' type="submit">Submit</button>
-     </form>
-    </div>
- </div>
+ <iframe src="https://forms.monday.com/forms/embed/fb68ffbbedccd11a7ccf08c3406f6aa8?r=use1" width="100%" height="1400" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
   <!--Footer-->
+
+
+
 
   <footer>
     <div class="footer-content d-flex flex-column align-items-center">
