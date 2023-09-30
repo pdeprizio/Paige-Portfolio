@@ -35,7 +35,7 @@
     z-index: -10;
   }
 
- 
+  
   
 .logo{
     font-weight: 300;
@@ -67,7 +67,7 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    text-align: left;
+    text-align: center;
     justify-content: center;
     align-items: center;
     background-color: transparent;
@@ -77,10 +77,10 @@
 }
 
 .home h1{
-    
-    font-size: 56px;
-    text-align: left;
-    color: black;
+    margin-top: 300px;
+    font-size: 26px;
+    text-align: center;
+    color: rgb(255, 255, 255);
     font-weight: 500;
 }
 .home img {
@@ -102,7 +102,7 @@
 .custom-button {
 
     margin-top: 2%;
-    margin-left: 20%;
+    margin-left: 2%;
     /* Button width and height */
     width: 200px;
     height: 50px;
@@ -111,10 +111,10 @@
     border-radius: 25px;
 
     /* Gradient background */
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 
     /* Text styling */
-    color: #fff; /* Text color */
+    color: #000000; /* Text color */
     font-size: 16px; /* Text size */
     text-align: center; /* Center text horizontally */
     line-height: 50px; /* Vertically center text */
